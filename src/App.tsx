@@ -1,12 +1,28 @@
 import './App.css';
 import ReactPlayer from 'react-player';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import Player from './Components/Player/Player';
+import Login from './Pages/Login';
+import Video from './Pages/Video';
+import Rss from './Pages/Rss';
 
 function App() {
   return (
-    <div className="App">
-      <Player id="679699eb-4ea8-4c49-8359-3c360b611b4c" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Rss/>}/>
+        <Route path="/video/:id" element={<Video/>}/>
+        {/* <Route path="/episode/:id"> */}
+      </Routes>
+    </BrowserRouter>
+    // <div className="App">
+    //   <Player id="..." />
+    // </div>
   );
 }
 
