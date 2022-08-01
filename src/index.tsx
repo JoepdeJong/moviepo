@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './Styles/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { ApolloClient, InMemoryCache, ApolloProvider, gql, HttpLink } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink } from '@apollo/client';
 
 // Generate a hex with a length of 16
 const getRandomHex = () => {
