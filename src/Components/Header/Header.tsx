@@ -1,8 +1,7 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.scss'
 
 const Header = () => {
-    const navigate = useNavigate();
     return (
         <div className='Header'>
             <h1>MoviePo</h1>
