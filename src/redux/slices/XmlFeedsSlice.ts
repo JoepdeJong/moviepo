@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { toast } from 'react-toastify';
 import Feed from '../../Types/Feed';
 
 interface XmlFeedsState {

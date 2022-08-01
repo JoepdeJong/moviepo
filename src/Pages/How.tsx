@@ -1,11 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from '../Components/Header/Header';
 
 import './How.scss';
 
 const How = () => {
-    const navigate = useNavigate();
-
     return (
         <div className='How'>
             <Header/>

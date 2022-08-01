@@ -5,6 +5,7 @@ import { useAppSelector } from '../redux/hooks';
 import { toast } from 'react-toastify';
 import Header from '../Components/Header/Header';
 import EpisodeList from '../Components/EpisodeList/EpisodeList';
+import { parseRssFeed } from '../utils/functions';
 
 const Feed = () => {
     let params = useParams();
@@ -26,6 +27,7 @@ const Feed = () => {
             <div className="block">
                 <h2>{feed!.title}</h2>
                 <p>{feed!.description}</p>
+                <button className='button' onClick={() => parseRssFeed(feed!.url)}>Sync</button>
             </div>
             <EpisodeList feed={feed!} />
         </div>

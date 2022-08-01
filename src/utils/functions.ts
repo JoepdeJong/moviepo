@@ -53,8 +53,10 @@ export const parseRssFeed = async (feedUrl: string) : Promise<Feed>  => {
         // Invert the items array so the newest episodes are at the top
         feed.items.reverse();
 
-        store.dispatch(updateFeed(feed));
+        await store.dispatch(updateFeed(feed));
 
+        toast.success(`Successfully synced ${feed.title}`);
+        
         return feed;
     } catch (error: any) {
         toast.error('Error fetching feed');
