@@ -7,7 +7,8 @@ const Episode = (episode: EpisodeType) => {
 
     const onClickHandler = () => {
         // Navigate to /video/{episode.streamMedia.id} in a new tab
-        window.open(`/video/${episode.streamMedia.id}`, '_blank');
+        const baseUrl = process.env.PUBLIC_URL;
+        window.open(`${baseUrl}/video/${episode.streamMedia.id}`, '_blank');
     }
 
     return (

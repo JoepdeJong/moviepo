@@ -1,7 +1,7 @@
 {
   "name": "moviepo",
   "version": "0.1.0",
-  "homepage": "https://joepdejong.github.io/moviepo",
+  "homepage": "https://sjoemelsoftware.nl/moviepo",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.6.9",
