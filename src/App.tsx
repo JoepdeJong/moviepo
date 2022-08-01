@@ -9,8 +9,9 @@ import Home from './Pages/Home';
 import How from "./Pages/How";
 
 function App() {
+  
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/how" element={<How/>}/>
