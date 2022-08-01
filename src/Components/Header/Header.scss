@@ -8,6 +8,7 @@
     nav {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         // justify-content: space-around;
         gap: 1em;
         align-items: center;
@@ -27,5 +28,11 @@
                 background-color: $green;
             }
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .Header {
+        padding: 1em;
     }
 }
