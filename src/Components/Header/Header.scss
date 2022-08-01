@@ -1,0 +1,31 @@
+@import '../../Styles/colors';
+
+.Header {
+    padding: 1em 4em;
+
+    background-color: $pink;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-around;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+
+        a {
+            padding: 0.5em 1em;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: $gray;
+
+            &:hover {
+                background-color: $blue;
+            }
+
+            &.active {
+                background-color: $green;
+            }
+        }
+    }
+}
