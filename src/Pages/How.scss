@@ -1,11 +1,12 @@
 .How {
     &__list {
-        width: 768px;
+        flex-basis: 768px;
         display: flex;
         flex-direction: column;
 
         img {
             max-height: 80vh;
+            max-width: 100%;
         }
     }
 }

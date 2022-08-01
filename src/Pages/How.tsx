@@ -27,9 +27,9 @@ const How = () => {
                     <h2>Picture in Picture</h2>
                     <p>Moviepo supports Picture in Picture. This means that you can watch the video in the background and the audio in the foreground. This is useful for watching a podcast show in the background while you listen to the audio in the foreground.</p>
                     <h3>Picture in Picture on iOS</h3>
-                    <img src='/img/moviepo-ios.png' alt='Example of PIP on IOS' />
+                    <img src={process.env.PUBLIC_URL+'/img/moviepo-ios.png'} alt='Example of PIP on IOS' />
                     <h3>Picture in Picture on OS X</h3>
-                    <img src='/img/moviepo-osx.png' alt='Example of PIP on OSX' />
+                    <img src={process.env.PUBLIC_URL+'/img/moviepo-osx.png'} alt='Example of PIP on OSX' />
                 </li>
             </ul>
         </div>
