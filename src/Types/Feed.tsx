@@ -8,6 +8,7 @@ type Feed = {
     description: string;
     imageUrl: string;
     items: Episode[];
+    syncedAt: Date;
 }
 
 export default Feed;

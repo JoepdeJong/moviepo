@@ -23,7 +23,8 @@ export const parseRssFeed = async (feedUrl: string) : Promise<Feed>  => {
         link: data.querySelector('channel > link')!.textContent || '',
         description: data.querySelector('channel > description')!.textContent || '',
         imageUrl: data.querySelector('channel > image > url')!.textContent || '',
-        items: []
+        items: [],
+        syncedAt: new Date(),
     }
 
     let items = data.querySelectorAll('channel > item');
@@ -46,6 +47,9 @@ export const parseRssFeed = async (feedUrl: string) : Promise<Feed>  => {
         }
         feed.items.push(Episode);
     }
+
+    // Invert the items array so the newest episodes are at the top
+    feed.items.reverse();
 
     store.dispatch(updateFeed(feed));
 

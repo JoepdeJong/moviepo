@@ -1,14 +1,14 @@
 
+import { useNavigate } from 'react-router-dom';
 import {default as FeedType}  from '../../Types/Feed';
 
 import './Feed.scss';
 
 const Feed = (feed: FeedType) => {
+    const navigate = useNavigate();
 
     const onClickHandler = () => {
-        // Navigate to /video/{feed.streamMedia.id} in a new tab
-        const baseUrl = process.env.PUBLIC_URL;
-        // window.open(`${baseUrl}/video/${feed.streamMedia.id}`, '_blank');
+        navigate(`/feed/${feed.id}`);
     }
 
     return (
