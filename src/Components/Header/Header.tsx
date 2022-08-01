@@ -8,6 +8,7 @@ const Header = () => {
             <p>A simple video player for podcast apps.</p>
             <nav>
                 <NavLink to="/">Home</NavLink>
+                <NavLink to="/feeds">Feeds</NavLink>
                 <NavLink to="/how">How</NavLink>
                 <a href="https://github.com/JoepdeJong/moviepo" title="GitHub" target="_blank" rel="noreferrer">GitHub</a>
             </nav>

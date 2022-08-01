@@ -1,12 +1,11 @@
 @import '../../Styles/colors';
 
-.Episode {
+.Feed {
     display: flex;
     flex-direction: column;
     box-shadow: 0 0px 1px 0 rgba(0,0,0,0.05), 0 5px 12.5px 0 rgba(59,61,63,0.11);
     overflow: hidden;
     cursor: pointer;
-    max-width: 500px;
 
     &__image {
         img {

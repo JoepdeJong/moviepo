@@ -1,0 +1,30 @@
+.Feeds {
+    &__list {
+        padding: 16px;
+
+        li {
+            margin: 0px;
+            list-style: none;
+        }
+    }
+    &__url {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+
+        .Feeds__info {
+            flex: 1;
+            padding: 8px 16px;
+            &__actions {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                align-items: center;
+            }
+        }
+
+        &:nth-child(odd) {
+            background-color: #fafafa;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $green;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    &.active {
+        background-color: $green;
+    }
+    
+    &--danger {
+        background-color: $red;
+        &:hover {
+            background-color: $red;
+            opacity: 0.8;
+        }
+    }
+}
+
+form.inline {
+    display: flex;
+    gap: 16px;
+
+    input {
+        margin: 0px;
+    }
+}
